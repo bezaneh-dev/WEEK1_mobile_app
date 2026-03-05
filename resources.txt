@@ -42,3 +42,17 @@ These 1-minute videos by Google will visually explain exactly how the widgets in
 === Official Documentation for Deep Dives ===
 - Text Styling (Fonts, Colors): https://api.flutter.dev/flutter/painting/TextStyle-class.html
 - Material Icons Catalog (Helpful for picking your own icons): https://fonts.google.com/icons?selected=Material+Icons
+
+=== Installation Videos (recommended) ===
+1. Official Flutter YouTube channel (start here for authoritative videos and playlists):
+   https://www.youtube.com/c/flutterdev
+
+2. FreeCodeCamp - Flutter Full Course (covers setup and basics):
+   https://www.youtube.com/watch?v=VPvVD8t02U8
+
+3. If you need an OS-specific install walkthrough, search YouTube for one of these terms:
+   - "Install Flutter on Windows 10 2024"
+   - "Install Flutter on macOS 2024"
+   - "Install Flutter on Linux Ubuntu Flutter setup"
+
+Tip: watch an install video that matches your OS and Flutter version year (e.g., "2024"), then follow the platform-specific steps on the official docs page above.

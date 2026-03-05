@@ -37,3 +37,70 @@ CircleAvatar(
   radius: 40,
   backgroundImage: AssetImage('assets/my_picture.png'), // The path must match pubspec exactly
 )
+
+=== SMALL PRACTICE TASKS (aligned to the Week1 project) ===
+
+Task 1 — Replace placeholder avatar with asset
+- Add an image to `assets/images/profile.png`
+- Update `pubspec.yaml` under `flutter: assets:` with `- assets/images/profile.png`
+- Replace the CircleAvatar in `lib/main.dart` with:
+
+CircleAvatar(
+  radius: 40,
+  backgroundImage: AssetImage('assets/images/profile.png'),
+)
+
+Task 2 — Make `ContactRow` a reusable StatelessWidget
+- Create a new widget file `lib/widgets/contact_row.dart` with:
+
+import 'package:flutter/material.dart';
+
+class ContactRow extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  const ContactRow({required this.icon, required this.text, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Icon(icon, color: Colors.amber[300]),
+        const SizedBox(width: 12),
+        Expanded(child: Text(text, style: const TextStyle(color: Colors.white))),
+      ],
+    );
+  }
+}
+
+Then import and use `ContactRow` instead of `buildContactRow`.
+
+Task 3 — Add a second screen and navigate to it
+- Create `DetailsScreen` in `lib/details_screen.dart` (simple Scaffold with back button)
+- Add a GestureDetector or InkWell on the card to `Navigator.push` to the details page.
+
+Task 4 — Responsive tweak
+- Reduce `Container` padding on small screens using MediaQuery:
+
+final padding = MediaQuery.of(context).size.width < 360 ? 16.0 : 50.0;
+padding: EdgeInsets.all(padding),
+
+Task 5 — Small unit test (sanity)
+- Create `test/basic_test.dart`:
+
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+  test('sanity', () { expect(1 + 1, 2); });
+}
+
+Task 6 — Quick style variations (try these values)
+- Change `borderRadius` to `BorderRadius.circular(20)` for a subtler curve.
+- Change `boxShadow` blurRadius to `6` and offset to `Offset(0,3)` to make shadow lighter.
+
+Task 7 — Commit + push checklist (one-liners)
+- git add -A
+- git commit -m "Week1: ID badge solution + notes"
+- git push origin main
+
+---
+If you want, I can scaffold the `lib/widgets/contact_row.dart` and `lib/details_screen.dart` files for you now, and add the small unit test file. Say which tasks to scaffold and I will add them and run `flutter analyze` to verify.

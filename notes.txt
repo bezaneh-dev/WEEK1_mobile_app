@@ -17,3 +17,32 @@ THE STRUGGLE (Why this is hard):
 
 TIP FOR SURVIVAL: 
 Read the errors. The terminal tells you exactly what is wrong 90% of the time. Don't panic, just read it.
+
+ADDITIONAL PRACTICAL NOTES (quick reference):
+
+- Run these commands often while developing:
+	- `flutter analyze` — static analyzer; run it before commits.
+	- `flutter test` — runs unit/widget tests (if present).
+	- `flutter run` — runs the app on a connected device or emulator.
+
+- Adding an image asset (short checklist):
+	1. Place your image in `assets/images/` inside the project.
+	2. Update `pubspec.yaml` under `flutter:` → `assets:` with the relative path.
+	3. Run `flutter pub get` then restart the app. Use `CircleAvatar(backgroundImage: AssetImage('assets/images/photo.png'))`.
+
+- Git / submission checklist before pushing to GitHub:
+	- `flutter analyze` (fix warnings where practical)
+	- `flutter test`
+	- Remove large build artifacts from the repo (do not commit `build/`)
+	- Add a helpful `README.md` and `resources.txt` (this repo already has both)
+
+- Debugging layout overflow (yellow/black stripes):
+	- Wrap long text in `Expanded` or `Flexible`.
+	- Use `SingleChildScrollView` if the content needs scrolling vertically.
+
+- Learning resources and exercises (practice tasks):
+	1. Change the `CircleAvatar` to use a real asset photo.
+	2. Add a secondary page and navigate to it using `Navigator.push`.
+	3. Create a custom widget `ContactRow` class instead of the helper function.
+
+If you want, I can add example code snippets for each of the practice tasks above directly into this file.
