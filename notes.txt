@@ -1,0 +1,19 @@
+Week 1: The Gauntlet - Installation, Configuration, and the First App
+
+Welcome to Mobile Development! 
+
+THE GOAL: 
+Your objective this week is seemingly simple: get a working environment and put boxes on a screen. BUT, mobile development setup is notoriously tricky. Expect to spend hours just installing things. That is normal. That is part of the job.
+
+CONCEPTS TO LEARN:
+1. Environment Setup: Installing the Flutter SDK, Android Studio, Xcode (if Mac), and setting environment variables (PATH).
+2. Command Line Basics: Using `flutter doctor` to diagnose issues.
+3. The Anatomy of a Flutter App: `pubspec.yaml` (the configuration file), `main.dart` (the entry point), and the Widget Tree.
+4. Basic UI Elements: Scaffold, AppBar, Column, Row, Container, and Text.
+
+THE STRUGGLE (Why this is hard):
+- Configuring your environment. If `flutter run` gives you an error, you must read the error and Google it.
+- The `pubspec.yaml` file: This file uses spaces, NOT tabs. If you are off by one space when adding an image, your app will crash. 
+
+TIP FOR SURVIVAL: 
+Read the errors. The terminal tells you exactly what is wrong 90% of the time. Don't panic, just read it.

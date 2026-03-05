@@ -1,0 +1,39 @@
+// 1. HOW TO ADD AN IMAGE IN PUBSPEC.YAML //
+// This is the number one thing students fail at in Week 1.
+// Open pubspec.yaml. Find the flutter section. Uncomment assets.
+// IT MUST MATCH THIS SPACING EXACTLY:
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/my_picture.png
+
+// If 'assets:' is not perfectly aligned with 'uses-material-design:', your app will crash.
+
+
+// 2. NESTING COLUMNS AND ROWS //
+// Columns go down. Rows go across. You can put Rows INSIDE Columns!
+
+Column(
+  crossAxisAlignment: CrossAxisAlignment.start, // Aligns children to the left
+  children: [
+    Text('Personal Info', style: TextStyle(fontSize: 20)),
+    SizedBox(height: 10), // Adding space
+    Row(
+      children: [
+        Icon(Icons.email),
+        SizedBox(width: 10), // Space between icon and text
+        Text('student@university.edu'),
+      ],
+    ),
+  ],
+)
+
+// 3. MAKING A CIRCULAR IMAGE //
+// We use a neat widget called CircleAvatar for this.
+CircleAvatar(
+  radius: 40,
+  backgroundImage: AssetImage('assets/my_picture.png'), // The path must match pubspec exactly
+)

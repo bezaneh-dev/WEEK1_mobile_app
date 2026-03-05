@@ -1,0 +1,20 @@
+TASK 1: The Ultimate Developer ID Badge
+
+This week, you aren't just putting text on a screen. You must design a complete, structured Developer ID Badge. It will test your ability to configure your project, nest layouts, and handle errors.
+
+REQUIREMENTS (Read Carefully!):
+1. THE DOCTOR: Run `flutter doctor` in your terminal. You must have NO ERRors for your target platform (Android or Chrome). Take a screenshot of the output.
+2. THE CLEANUP: Create a new Flutter project (`flutter create my_id`). Delete EVERYTHING inside `main.dart` and start from scratch.
+3. THE ASSET: You MUST use a LOCAL image for your profile picture (`AssetImage`), not a web URL. 
+   - *Challenge*: To do this, you must create an `assets` folder, add a picture (like `profile.png`), and register it in `pubspec.yaml`. If your app says "Unable to load asset", check your spacing in `pubspec.yaml`! It must be exactly 2 spaces nested.
+4. THE LAYOUT: 
+   - A Scaffold with a dark background color.
+   - A centralized Container (the ID Card itself) with rounded corners and a lighter background.
+   - Inside the card: 
+     - A top Row containing your local profile image (circular) and your Name next to it.
+     - A Divider line underneath.
+     - A Column below the divider containing your details (Title, Phone, Email) with matching icons next to them (Use Row inside Column!).
+5. NO OVERFLOWS: If you get a "yellow and black warning tape" error on your screen, your widgets are too big for the screen. Fix it.
+
+SUBMISSION:
+Replace `screenshot.jpg` in this folder with a picture of your finished ID badge running on an emulator or real device. If you couldn't figure out the local image, use a placeholder icon, but you will lose points.

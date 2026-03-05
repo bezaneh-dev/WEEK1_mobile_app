@@ -1,0 +1,16 @@
+=== The Holy Grails of Week 1 ===
+
+1. Installation Guide (Follow this EXPLICITLY for your OS):
+   https://flutter.dev/docs/get-started/install
+
+2. Understanding 'flutter doctor' and fixing Android/iOS toolchain issues:
+   Search YouTube for "Flutter Doctor setup fix [Your OS]" if you get stuck on licenses or SDK paths.
+
+3. The Dart Language Cheat Sheet (for absolute beginners):
+   https://dart.dev/codelabs/dart-cheatsheet
+
+4. Adding Assets and Images (WARNING: Pay attention to indentation!):
+   https://docs.flutter.dev/ui/assets-and-images
+
+5. Row and Column layout basics (Interactive tool):
+   https://docs.flutter.dev/ui/layout
