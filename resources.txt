@@ -14,3 +14,31 @@
 
 5. Row and Column layout basics (Interactive tool):
    https://docs.flutter.dev/ui/layout
+
+=== How These Connect to the ID Badge App Solution ===
+To fully understand the solution code, study these key concepts:
+- **MaterialApp & Scaffold**: They form the root structure and the screen's background/app bar.
+- **Container & BoxDecoration**: We used this to create the dark grey ID card with rounded corners and a shadow.
+- **Column & Row**: Columns stack items vertically (the overall ID card content), Rows stack horizontally (the icon + contact text).
+- **Expanded Widget**: We used `Expanded` to prevent the text from overflowing the screen on small devices.
+- **CircleAvatar**: Used to create that quick, circular profile picture.
+- **Custom Functions**: `buildContactRow` demonstrates how you can avoid repeating code by creating a helper method that returns a Widget.
+
+=== Recommended Free Courses ===
+1. FreeCodeCamp - Flutter Course for Beginners:
+   https://www.youtube.com/watch?v=VPvVD8t02U8
+   (Great for understanding project structure and basic widgets from scratch).
+
+2. Official Flutter Codelabs (Write your first application):
+   https://docs.flutter.dev/codelabs
+
+=== "Widget of the Week" YouTube Videos (Crucial for styling and layout) ===
+These 1-minute videos by Google will visually explain exactly how the widgets in our app work:
+- Container: https://youtu.be/c1xLMaTUWCY
+- Expanded: https://youtu.be/_rnZaagadyo
+- Column: https://youtu.be/wE7khGHw88A
+- Row: https://youtu.be/YnRoCGXPt3M
+
+=== Official Documentation for Deep Dives ===
+- Text Styling (Fonts, Colors): https://api.flutter.dev/flutter/painting/TextStyle-class.html
+- Material Icons Catalog (Helpful for picking your own icons): https://fonts.google.com/icons?selected=Material+Icons
